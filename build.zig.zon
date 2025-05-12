@@ -1,0 +1,17 @@
+.{
+    .name = .uv,
+    .version = "0.1.0",
+    .fingerprint = 0xaaf74b45256779d6,
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "LICENSE",
+    },
+    .minimum_zig_version = "0.14.0",
+    .dependencies = .{
+        .uv = .{
+            .url = "git+https://github.com/libuv/libuv#8d4218dcd7ac30a510caec3da50374b517ede425",
+            .hash = "N-V-__8AAGxNRAAdGt7peZqvauDkOK6Fjrwp_kluE708LN7c",
+        },
+    },
+}
