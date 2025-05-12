@@ -14,6 +14,8 @@ pub fn build(b: *std.Build) !void {
         .name = "uv",
     });
     b.installArtifact(uv);
+    uv.installHeadersDirectory(dep.path("include"), ".", .{});
+
     uv.linkLibC();
 
     uv.addIncludePath(dep.path("include"));
